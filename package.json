@@ -1,0 +1,26 @@
+{
+  "name": "super_mario_style_game",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/septemberwu/super_mario_style_game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/septemberwu/super_mario_style_game/issues"
+  },
+  "homepage": "https://github.com/septemberwu/super_mario_style_game#readme",
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Retro World - 8-bit Adventure</title>
+    <meta name="description" content="A classic 8-bit style horizontal scrolling platformer game built with HTML5 Canvas.">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div class="game-container">
+            <div class="hud">
+                <div class="hud-item">
+                    <span class="label">MARIO</span>
+                    <span id="score" class="value">000000</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">COINS</span>
+                    <span id="coins" class="value">x 00</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">WORLD</span>
+                    <span class="value">1-1</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">TIME</span>
+                    <span id="time" class="value">400</span>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+            
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h1 id="overlay-title">PAUSED</h1>
+                    <button id="resume-btn" class="pixel-btn">RESUME</button>
+                    <button id="restart-btn" class="pixel-btn">RESTART</button>
+                </div>
+            </div>
+
+            <div id="start-screen" class="overlay">
+                <div class="overlay-content">
+                    <h1 class="game-title">SUPER<br>RETRO WORLD</h1>
+                    <p class="blink">PRESS START TO PLAY</p>
+                    <button id="start-btn" class="pixel-btn">START GAME</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls-hint">
+            <p>[A][D] Move | [SPACE] Jump | [S] Duck</p>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
